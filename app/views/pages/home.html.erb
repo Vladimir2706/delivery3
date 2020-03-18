@@ -1,6 +1,26 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<head>
+<title>!DOCTYPE</title>
+<meta charset="utf-8">
+</head>
 
+<body>
 
-<%= link_to "Show couriers", controller: "couriers", action: "index" %>
-</br>  
-<%= link_to "show packages", controller: "packages", action: "index" %> 
+<div class="container-fluid">
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+    </nav>
+
+    <h1 class="text-center">Welcome to the Delivery App</h1>
+
+    <div class="btn btn-light">
+    <%= link_to "Show couriers", controller: "couriers", action: "index" %> |
+    <%= link_to "Show packages", controller: "packages", action: "index" %>
+    </div>
+
+     
+</div>
+
+</body>
